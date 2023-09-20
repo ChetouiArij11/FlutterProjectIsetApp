@@ -27,7 +27,7 @@ class WelcomePage extends StatelessWidget {
             Image.asset('hh.png'), 
             SizedBox(height: 20.0),
             Text(
-              'Bienvenue\nVous pouvez utiliser cette application à tout moment sans connexion aussi.',
+              'Bienvenue à notre application \nHave a nice day ',
               textAlign: TextAlign.center,
               style: TextStyle(fontSize: 18.0),
             ),
