@@ -6,7 +6,7 @@ class NewsPage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text('Actualités Universitaires'),
-        backgroundColor: Color.fromARGB(255, 25, 0, 253), // Couleur de l'application universitaire
+        backgroundColor: Color(0xFF1900FD), // Couleur de l'application universitaire
         leading: IconButton(
           icon: Icon(Icons.arrow_back),
           onPressed: () {
@@ -21,14 +21,14 @@ class NewsPage extends StatelessWidget {
             NewsCard(
               title: 'Inauguration du Nouveau Bâtiment',
               date: '15 Septembre 2023',
-              imageAsset: 'iset.jpg', // Image depuis les assets
+              imageAsset: 'assets/iset.jpg', // Chemin de l'image depuis les assets
               description:
                   'Nous sommes heureux d\'inaugurer notre nouveau bâtiment qui offrira des installations modernes à nos étudiants.',
             ),
             NewsCard(
               title: 'Événement Culturel Annuel',
               date: '22 Septembre 2023',
-              imageAsset: 'iset.jpg', // Image depuis les assets
+              imageAsset: 'assets/iset.jpg', // Chemin de l'image depuis les assets
               description:
                   'Ne manquez pas notre événement culturel annuel qui mettra en valeur la richesse de notre diversité culturelle.',
             ),
@@ -67,9 +67,9 @@ class NewsCard extends StatelessWidget {
           ClipRRect(
             borderRadius: BorderRadius.vertical(top: Radius.circular(12.0)),
             child: Image.asset(
-              imageAsset, // Image depuis les assets
-              width: 50,
-              height: 50,
+              imageAsset, // Chemin de l'image depuis les assets
+              width: double.infinity,
+              height: 200.0,
               fit: BoxFit.cover,
             ),
           ),

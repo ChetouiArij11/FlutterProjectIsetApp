@@ -19,7 +19,7 @@ class AccPage extends StatelessWidget {
         title: Text('ISET of Tozeur'),
         backgroundColor: Color.fromARGB(255, 0, 26, 255),
         leading: IconButton(
-          icon: Image.asset('iset.jpg'),
+          icon: Image.asset('assets/iset.jpg'),
           onPressed: () {
             Navigator.push(
               context,
@@ -72,6 +72,7 @@ class AccPage extends StatelessWidget {
                   MenuItem(
                     icon: Icons.person_pin,
                     title: 'Nouveautés',
+                    notificationCount: 2,
                     onPressed: () {
                       // Navigation vers la page "NewsPage"
                       Navigator.push(
@@ -86,6 +87,7 @@ class AccPage extends StatelessWidget {
                   MenuItem(
                     icon: Icons.book,
                     title: 'Bibliotheques',
+                    notificationCount: 0,
                     onPressed: () {
                       // Navigation vers la page "NewsPage"
                       Navigator.push(
@@ -100,6 +102,7 @@ class AccPage extends StatelessWidget {
                   MenuItem(
                     icon: Icons.signal_cellular_0_bar,
                     title: '4C',
+                    notificationCount: 1,
                     onPressed: () {
                       // Navigation vers la page "NewsPage"
                       Navigator.push(
@@ -114,6 +117,7 @@ class AccPage extends StatelessWidget {
                   MenuItem(
                     icon: Icons.format_textdirection_l_to_r_outlined,
                     title: 'Cours',
+                    notificationCount: 2,
                     onPressed: () {
                       // Navigation vers la page "NewsPage"
                       Navigator.push(
@@ -128,6 +132,7 @@ class AccPage extends StatelessWidget {
                   MenuItem(
                     icon: Icons.work,
                     title: 'Formation',
+                    notificationCount: 2,
                     onPressed: () {
                       // Navigation vers la page "NewsPage"
                       Navigator.push(
@@ -142,6 +147,7 @@ class AccPage extends StatelessWidget {
                   MenuItem(
                     icon: Icons.maps_home_work_outlined,
                     title: 'Admin',
+                    notificationCount: 0,
                     onPressed: () async {
                       // URL du site web de l'ISET de Tozeur
                       const url = 'https://isett.rnu.tn/';
@@ -211,7 +217,7 @@ class AccPage extends StatelessWidget {
                       ),
                     ),
                     Image.asset(
-                      '1.png', // Chemin de votre image PNG
+                      'assets/1.png', // Chemin de votre image PNG
                       width: 100.0, // Largeur de l'image
                       height: 100.0, // Hauteur de l'image
                     ),
@@ -265,7 +271,7 @@ class AccPage extends StatelessWidget {
                       ),
                     ),
                     Image.asset(
-                      '2.png', // Chemin de votre image PNG
+                      'assets/2.png', // Chemin de votre image PNG
                       width: 100.0, // Largeur de l'image
                       height: 100.0, // Hauteur de l'image
                     ),

@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 
-
-
 class FourCClubPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -16,7 +14,7 @@ class FourCClubPage extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             Image.asset(
-              '4c.png', // Chemin de votre image du logo du club 4C
+              'assets/4c.png', // Chemin de votre image du logo du club 4C (assurez-vous que le chemin est correct)
               width: 150.0, // Largeur du logo
               height: 150.0, // Hauteur du logo
             ),
@@ -30,7 +28,7 @@ class FourCClubPage extends StatelessWidget {
             ),
             SizedBox(height: 10.0),
             Text(
-              'Centre de Carrières et de Certification des Compétences de ISET Tozeur',
+              'Centre de Carrières et de Certification des Compétences de l\'ISET Tozeur',
               textAlign: TextAlign.center,
               style: TextStyle(
                 fontSize: 16.0,
@@ -47,7 +45,7 @@ class FourCClubPage extends StatelessWidget {
             ),
             SizedBox(height: 10.0),
             Text(
-              'Le Centre 4C est un Centre pour étudiant dédié à la créativité, la communication, la culture et le codage. Nous organisons des ateliers, des événements et des activités pour les étudiants intéressés par ces domaines. Rejoignez-nous pour développer vos compétences et rencontrer d\'autres passionnés!',
+              'Le Centre 4C est un Centre pour étudiants dédié à la créativité, la communication, la culture et le codage. Nous organisons des ateliers, des événements et des activités pour les étudiants intéressés par ces domaines. Rejoignez-nous pour développer vos compétences et rencontrer d\'autres passionnés!',
               textAlign: TextAlign.justify,
               style: TextStyle(
                 fontSize: 16.0,
@@ -56,7 +54,7 @@ class FourCClubPage extends StatelessWidget {
             SizedBox(height: 20.0),
             ElevatedButton(
               onPressed: () {
-                
+                // Mettez ici l'action que vous souhaitez exécuter lorsque le bouton est pressé
               },
               style: ElevatedButton.styleFrom(
                 primary: Color(0xFF001AFF), // Couleur du bouton
@@ -75,4 +73,5 @@ class FourCClubPage extends StatelessWidget {
       ),
     );
   }
+
 }

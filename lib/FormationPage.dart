@@ -6,7 +6,7 @@ class FormationPage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text('Formations en Informatique'),
-        backgroundColor:  Color.fromARGB(255, 25, 0, 253), // Couleur de l'application universitaire
+        backgroundColor: Color(0xFF1900FD), // Couleur de l'application universitaire
       ),
       body: SingleChildScrollView(
         padding: EdgeInsets.all(16.0),
@@ -17,13 +17,13 @@ class FormationPage extends StatelessWidget {
               title: 'Développement Web',
               description:
                   'Apprenez à créer des sites Web interactifs et responsifs avec les dernières technologies front-end et back-end.',
-              imageAsset: 'dev.png',
+              imageAsset: 'assets/dev.png', // Chemin de l'image depuis les assets
             ),
             FormationCard(
               title: 'Réseau Informatique',
               description:
                   'Maîtrisez les concepts de réseaux, configurez des routeurs, commutateurs et assurez la sécurité des données.',
-              imageAsset: 'reseau.png',
+              imageAsset: 'assets/reseau.png', // Chemin de l'image depuis les assets
             ),
             // Ajoutez d'autres formations ici
           ],
@@ -58,7 +58,7 @@ class FormationCard extends StatelessWidget {
           ClipRRect(
             borderRadius: BorderRadius.vertical(top: Radius.circular(12.0)),
             child: Image.asset(
-              '$imageAsset', // Image depuis les assets
+              imageAsset, // Image depuis les assets
               width: double.infinity,
               height: 200.0,
               fit: BoxFit.cover,

@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 
-
-
 class LibraryPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -20,24 +18,23 @@ class LibraryPage extends StatelessWidget {
           BookList(
             category: 'Livres',
             books: [
-              Book(title: 'JAVA', imageUrl: 'java.jpg', url: 'lien_vers_livre1'),
-              Book(title: 'PostgreSQL', imageUrl: 'Postgr.jpg', url: 'lien_vers_livre2'),
+              Book(title: 'JAVA', imageUrl: 'assets/java.jpg', url: 'lien_vers_livre1'),
+              Book(title: 'PostgreSQL', imageUrl: 'assets/Postgr.jpg', url: 'lien_vers_livre2'),
               // Ajoutez plus de livres pour cette catégorie
             ],
           ),
           BookList(
             category: 'Support de cours',
             books: [
-              Book(title: 'Big Data', imageUrl: 'data.jpg', url: 'lien_vers_livre3'),
-              Book(title: 'Cloud', imageUrl: 'cloudin.jpg', url: 'lien_vers_livre4'),
+              Book(title: 'Big Data', imageUrl: 'assets/data.jpg', url: 'lien_vers_livre3'),
+              Book(title: 'Cloud', imageUrl: 'assets/cloudin.jpg', url: 'lien_vers_livre4'),
               // Ajoutez plus de livres pour cette catégorie
             ],
           ),
           BookList(
             category: 'Rapport de Stage et PFE ',
             books: [
-              Book(title: 'Stage 1ere electro', imageUrl: 'stage1.jpg', url: 'lien_vers_livre5'),
-              
+              Book(title: 'Stage 1ere electro', imageUrl: 'assets/stage1.jpg', url: 'lien_vers_livre5'),
               // Ajoutez plus de livres pour cette catégorie
             ],
           ),

@@ -1,30 +1,30 @@
 import 'package:flutter/material.dart';
-
 import 'HomePage.dart';
+
 class WelcomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: Text('ISET de Tozeur'),
-        backgroundColor:Color.fromARGB(255, 0, 26, 255),
+        backgroundColor: Color.fromARGB(255, 0, 26, 255),
         leading: IconButton(
-    icon: Image.asset('iset.jpg'),
-    onPressed: () {
-      Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) => HomePage(),
-                  ),);
-     
-    },
-  ),
+          icon: Image.asset('assets/iset.jpg'), // Assurez-vous que le chemin de l'image est correct
+          onPressed: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (context) => HomePage(),
+              ),
+            );
+          },
+        ),
       ),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            Image.asset('hh.png'), 
+            Image.asset('assets/hh.png'), // Assurez-vous que le chemin de l'image est correct
             SizedBox(height: 20.0),
             Text(
               'Bienvenue à notre application \nHave a nice day ',
@@ -41,11 +41,10 @@ class WelcomePage extends StatelessWidget {
                   ),
                 );
               },
-                style: ElevatedButton.styleFrom(
-    primary: Color.fromARGB(255, 0, 26, 255), 
-  ),
+              style: ElevatedButton.styleFrom(
+                primary: Color.fromARGB(255, 0, 26, 255),
+              ),
               child: Text('Accéder à l\'espace extranet'),
-              
             ),
           ],
         ),
@@ -53,5 +52,3 @@ class WelcomePage extends StatelessWidget {
     );
   }
 }
-
-

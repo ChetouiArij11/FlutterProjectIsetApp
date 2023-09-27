@@ -10,7 +10,7 @@ class _ProfilePageState extends State<ProfilePage> {
   String _selectedClass = '1ère';
 
   final TextEditingController _nameController = TextEditingController();
-  final TextEditingController _cinController = TextEditingController();
+
   final TextEditingController _emailController = TextEditingController();
   final TextEditingController _addressController = TextEditingController();
 
@@ -48,12 +48,12 @@ class _ProfilePageState extends State<ProfilePage> {
               onPressed: () {
                 // Sauvegardez les informations du formulaire
                 final name = _nameController.text;
-                final cin = _cinController.text;
+                
                 final email = _emailController.text;
                 final address = _addressController.text;
 
                 print('Nom: $name');
-                print('CIN: $cin');
+                
                 print('Email: $email');
                 print('Adresse: $address');
                 print('Département: $_selectedDepartment');
@@ -97,13 +97,7 @@ class _ProfilePageState extends State<ProfilePage> {
                 ),
               ),
               SizedBox(height: 16.0),
-              TextField(
-                controller: _cinController,
-                decoration: InputDecoration(
-                  labelText: 'CIN',
-                ),
-              ),
-              SizedBox(height: 16.0),
+          
               TextField(
                 controller: _emailController,
                 decoration: InputDecoration(
