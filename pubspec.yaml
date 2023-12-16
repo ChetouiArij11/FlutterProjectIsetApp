@@ -32,6 +32,11 @@ dependencies:
     sdk: flutter
   carousel_slider: ^4.0.0
   url_launcher: ^6.0.12
+  http: ^0.13.3  # Add the http package for HTTP requests
+  provider: ^6.1.1  # Add the provider package for state management
+  flutter_bloc: ^7.3.1  # Add any additional packages you plan to use
+
+
   
 
 
